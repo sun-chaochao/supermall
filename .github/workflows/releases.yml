@@ -21,8 +21,8 @@ jobs:
             cp -r dist docker/
             docker build -t registry.cn-hangzhou.aliyuncs.com/syyck/supermall:$(node -p "require('./package.json').version") ./docker
         
-        - name: Login Docker Repo
-          run: echo "${{ secrets.ALIYUN_DOCKER_REPO_PWD }}" | docker login --username=sunchao7255 registry.cn-hangzhou.aliyuncs.com -u ${{ secrets.ALIYUN_DOCKER_REPO_USERNAME }} --password-stdin
+        # - name: Login Docker Repo
+        #   run: echo "${{ secrets.ALIYUN_DOCKER_REPO_PWD }}" | docker login --username=sunchao7255 registry.cn-hangzhou.aliyuncs.com -u ${{ secrets.ALIYUN_DOCKER_REPO_USERNAME }} --password-stdin
         
-        - name: Push Docker
-          run: docker push registry.cn-hangzhou.aliyuncs.com/syyck/supermall:$(node -p "require('./package.json').version")
+        # - name: Push Docker
+        #   run: docker push registry.cn-hangzhou.aliyuncs.com/syyck/supermall:$(node -p "require('./package.json').version")
