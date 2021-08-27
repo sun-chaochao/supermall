@@ -2,7 +2,7 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <h1>docker hello!</h1>
+    <h1>hello docker!</h1>
     <h2>阿里云!</h2>
   </div>
 </template>
